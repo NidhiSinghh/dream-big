@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>dream big</title>
+   <script src="https://kit.fontawesome.com/e452450e48.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/effects.css">
+<script>
+function check()
+ {//email test
+  var x = document.getElementById("email").value;
+ 
+    var r= /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+if (r.test(x))
+{//document.getElementById("secondPrompt").style.color="Green";
+document.getElementById("secondPrompt").innerHTML="valid"
+return true;
+}
+else
+
+{//document.getElementById("secondPrompt").style.color="Red";
+document.getElementById("secondPrompt").innerHTML="enter valid email"
+return false;
+  }
+}
+function check2()
+{ //test xxx-xxx-xxxx
+  var phone= document.getElementById("phoneno").value;
+ 
+    var s=/^\d{3}-\d{3}-\d{4}$/;
+if (s.test(phone))
+{//document.getElementById("phonePrompt").style.color="Green";
+document.getElementById("phonePrompt").innerHTML="accepted";
+return (true);}
+else
+{//document.getElementById("phonePrompt").style.color="Red";
+document.getElementById("phonePrompt").innerHTML="use xxx-xxx-xxxx";
+return (false);
+  }
+}
+
+function validate()
+{//test for name
+    var t = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    var name = document.getElementById('yourname').value;
+    if(!t.test(name)){
+    	//document.getElementById("firstPrompt").style.color="Red";
+      document.getElementById("firstPrompt").innerHTML="enter full name ";
+        return false;
+    }else{
+//document.getElementById("firstPrompt").style.color="Green";
+        document.getElementById("firstPrompt").innerHTML="valid";
+        return true;
+    }
+}
+function openWin() {
+  window.open("submit.html");
+}
+</script>
+<style>
+/*.header {
+   padding-top: 0.75rem;
+   padding-right: 2rem;
+    padding-left: 2rem;
+     padding-bottom: 1.5rem;
+  text-align: center;
+  background: #4169E1;
+  background-size: 100%;
+  color: white;
+  font-size: 10px;
+  }
+ 
+.dropbtn {
+  
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline;
+  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.footer {
+   text-align: center;
+   left: 0;
+   bottom: 0;
+ width: 100%;
+   background-color: #202020;
+   color: white;
+   }
+a {
+color: white;
+}
+a:link {
+  text-decoration: none;
+  }
+  a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
+.col{
+ column-count: 3;
+ column-gap: 10px;
+}*/
+
+#button1{
+background-color: #4CAF50; /*green*/
+cursor: pointer;
+color: white;
+border: none;
+padding: 15px 32px;
+text-align: center;
+font-size: 16px;
+}
+
+
+
+/* Responsive layout - when the screen is more than 600px wide, make the two columns stack on top of each other instead of next to each other*/
+@media screen and (min-width: 684px) {
+  table{
+  box-sizing: border-box;
+ width: 300px;
+  height: 100px;
+  padding: 30px;
+  /*border: 2px solid black;*/
+background-color:#4169e1;/*royal blue*/
+}
+ table {
+   margin: 0 auto;
+}
+  }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other*/
+  @media screen and (max-width: 684px) {
+ th
+ {
+  padding:10px;
+}
+td
+ {
+  padding:10px;
+}
+input
+{
+padding: 2px;
+}
+table{
+  box-sizing: border-box;
+ width: 100px;
+  height: 100px;
+  padding:10px;
+  /*border: 2px solid black;*/
+background-color:#4169e1;/*royal blue*/
+}
+
+@media only screen and (max-width: 638px) and (min-width: 500px)  {
+
+th
+ {
+  padding:3px;
+}
+td
+ {
+  padding:3px;
+}
+input
+{
+padding: 2px;
+}
+.input_col{
+  input size="10";
+}
+.feed_col{
+  font-size: 15px;
+}
+table{
+  box-sizing: border-box;
+ width: 60px;
+  height: 100px;
+  padding:3px;
+  /*border: 2px solid black;*/
+background-color:#4169e1;/*royal blue*/
+}
+
+}
+ 
+
+</style>
+<body>
+	 <!-- <header>
+    <nav id="header-nav" class="navbar navbar-default">
+    	<div class="container">
+        <div class="navbar-header">
+    	<img src="../images/D.png" alt="logo" style="float:left;width:83px;height:83px;">
+    	
+    </div>
+</div>
+
+
+    </nav>
+</header>
+	<img src="../images/D.png" alt="logo" style="float:left;width:83px;height:83px;">-->
+<div>
+
+<a href="submit.html">
+<img src="../images/D.png" alt="logo" style="width:83px;height:83px;">
+</a>
+<h1 align="center">REGISTRATION FORM</h1>
+</div>
+
+<!--<h1 align="left"  >DreamBIG</h1>
+  <h4 align="left">Career Counselling & Guidance</h4>
+<div class="dropdown" style="float:right;">
+<button class="dropbtn" ><i class="fa fa-align-justify" aria-hidden="true"></i></button>
+  <div class="dropdown-content">
+  <a href="about.html">About us</a>
+  <a href="registration.html">Registrations</a>
+  <a href="faq.html">FAQs</a>
+</div>
+  </div>
+</div>-->
+
+
+<form action="#">
+	<table border="0">
+	
+  <tr>
+  <td class="label_col">Your Name:(full name)</td>
+ <td class="input_col"><input name="yourname" type="text" id="yourname" onblur="validate();" required ><br></td>
+  <td class="feed_col"><span id="firstPrompt"></span></td>    </tr>
+<tr>
+    <td class="label_col">Phone No:</td>
+<td class="input_col"><input name="phoneno" type="text" id="phoneno"  onblur="check2();" placeholder="xxx-xxx-xxxx"><br></td>
+<td class="feed_col"><span id="phonePrompt"></span></td>
+</tr>
+
+<tr>
+  <td class="label_col">Address:</td>
+ <td class="input_col"><input name="address" type="text" id="address" required><br></td>
+</tr>
+<tr>
+   <td class="label_col">Email:</td>
+ 
+<td class="input_col"><input name="email" type="text" id="email"  onblur="check();"><br></td>
+<td class="feed_col"><span id="secondPrompt"></span></td>
+</tr>
+<tr>
+    <td class="label_col">Grade:</td>
+<td class="input_col">
+<input type="radio"  name="Grade" value="10th" >10th <br>
+<input type="radio"  name="Grade" value="12th" >12th <br>
+<input type="radio"  name="Grade" value="bachleor" >bachleor <br>
+<input type="radio"  name="Grade" value="others" >others <br></td>
+
+</tr>
+<tr>
+<td class="label_col">Appointment Date:</td>
+<td class="input_col"><input type="date" required ><br></td>
+</tr>
+<tr>
+<td class="label_col">Additional Info:</td>
+<td class="input_col"><textarea id="Additional Info:" rows="4" cols="50"></textarea></td>
+</tr>
+<tr>
+<td class="label_col"></td>
+<td class="input_col"><input type="submit" value="Submit" id="button1" onclick="openWin()"></td>
+</tr>
+<!--<tr>
+<td class="label_col"></td>
+<td class="input_col"><button class="button button1" onclick="openWin()">SUBMIT</button></td>
+</tr>-->
+
+</table>
+</form>
+
+</body>
+<!--<script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>-->
+</body>
+<br><br><br>
+<div class="footer">
+<a href="about.html">About Us</a><br>
+<p>Connect with us:
+<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+<a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></p>
+<details>
+<summary>Contact Us</summary><p><i class="fa fa-phone" aria-hidden="true"></i>1234567890<br>
+<i class="fa fa-envelope-open" aria-hidden="true"></i>dreambid@gmail.com
+</p>
+</details><br>
+<div class="col">
+<a href="testimonials.html">Feedback</a>
+<p><a href="teamm.html">Meet the team</a></p>
+<p><a href="faq.html">FAQs</a></p></div>
+<br>
+<p align="center">&copy; All Rights Resered, DreamBig 2020.</p>
+<p align="center"> Made with<i class="fa fa-heart" aria-hidden="true"></i>by Chirag Hegde, Nidhi Singh &amp; Nidhi Heniya.</p>
+
+</html>
