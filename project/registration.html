@@ -14,13 +14,13 @@ function check()
  
     var r= /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 if (r.test(x))
-{//document.getElementById("secondPrompt").style.color="Green";
+{
 document.getElementById("secondPrompt").innerHTML="valid"
 return true;
 }
 else
 
-{//document.getElementById("secondPrompt").style.color="Red";
+{
 document.getElementById("secondPrompt").innerHTML="enter valid email"
 return false;
   }
@@ -31,11 +31,11 @@ function check2()
  
     var s=/^\d{3}-\d{3}-\d{4}$/;
 if (s.test(phone))
-{//document.getElementById("phonePrompt").style.color="Green";
+{
 document.getElementById("phonePrompt").innerHTML="accepted";
 return (true);}
 else
-{//document.getElementById("phonePrompt").style.color="Red";
+{
 document.getElementById("phonePrompt").innerHTML="use xxx-xxx-xxxx";
 return (false);
   }
@@ -46,11 +46,11 @@ function validate()
     var t = /^[a-zA-Z]+ [a-zA-Z]+$/;
     var name = document.getElementById('yourname').value;
     if(!t.test(name)){
-    	//document.getElementById("firstPrompt").style.color="Red";
+    	
       document.getElementById("firstPrompt").innerHTML="enter full name ";
         return false;
     }else{
-//document.getElementById("firstPrompt").style.color="Green";
+
         document.getElementById("firstPrompt").innerHTML="valid";
         return true;
     }
@@ -60,18 +60,7 @@ function openWin() {
 }
 </script>
 <style>
-/*.header {
-   padding-top: 0.75rem;
-   padding-right: 2rem;
-    padding-left: 2rem;
-     padding-bottom: 1.5rem;
-  text-align: center;
-  background: #4169E1;
-  background-size: 100%;
-  color: white;
-  font-size: 10px;
-  }
- 
+
 .dropbtn {
   
   font-size: 20px;
@@ -142,7 +131,9 @@ text-align: center;
 font-size: 16px;
 }
 
-
+.test {
+font-family: 'Cagliostro';font-size:20px;
+}
 
 /* Responsive layout - when the screen is more than 600px wide, make the two columns stack on top of each other instead of next to each other*/
 @media screen and (min-width: 684px) {
@@ -216,19 +207,7 @@ background-color:#4169e1;/*royal blue*/
 
 </style>
 <body>
-	 <!-- <header>
-    <nav id="header-nav" class="navbar navbar-default">
-    	<div class="container">
-        <div class="navbar-header">
-    	<img src="images/D.png" alt="logo" style="float:left;width:83px;height:83px;">
-    	
-    </div>
-</div>
-
-
-    </nav>
-</header>
-	<img src="images/D.png" alt="logo" style="float:left;width:83px;height:83px;">-->
+	 
 <div>
 
 <a href="submit.html">
@@ -237,17 +216,6 @@ background-color:#4169e1;/*royal blue*/
 <h1 align="center">REGISTRATION FORM</h1>
 </div>
 
-<!--<h1 align="left"  >DreamBIG</h1>
-  <h4 align="left">Career Counselling & Guidance</h4>
-<div class="dropdown" style="float:right;">
-<button class="dropbtn" ><i class="fa fa-align-justify" aria-hidden="true"></i></button>
-  <div class="dropdown-content">
-  <a href="about.html">About us</a>
-  <a href="registration.html">Registrations</a>
-  <a href="faq.html">FAQs</a>
-</div>
-  </div>
-</div>-->
 
 
 <form action="#">
@@ -294,37 +262,22 @@ background-color:#4169e1;/*royal blue*/
 <td class="label_col"></td>
 <td class="input_col"><input type="submit" value="Submit" id="button1" onclick="openWin()"></td>
 </tr>
-<!--<tr>
-<td class="label_col"></td>
-<td class="input_col"><button class="button button1" onclick="openWin()">SUBMIT</button></td>
-</tr>-->
-
 </table>
 </form>
 
-</body>
-<!--<script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>-->
-</body>
-<br><br><br>
-<div class="footer">
-<a href="about.html">About Us</a><br>
-<p>Connect with us:
-<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-<a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></p>
-<details>
-<summary>Contact Us</summary><p><i class="fa fa-phone" aria-hidden="true"></i>1234567890<br>
-<i class="fa fa-envelope-open" aria-hidden="true"></i>dreambid@gmail.com
-</p>
-</details><br>
-<div class="col">
-<a href="testimonials.html">Feedback</a>
-<p><a href="teamm.html">Meet the team</a></p>
-<p><a href="faq.html">FAQs</a></p></div>
-<br>
-<p align="center">&copy; All Rights Resered, DreamBig 2020.</p>
-<p align="center"> Made with<i class="fa fa-heart" aria-hidden="true"></i>by Chirag Hegde, Nidhi Singh &amp; Nidhi Heniya.</p>
+<div class="test">
+<p style="text-align:center;">Dont wanna go for counselling? Want to find 
+your way on your own?
+Go for the self assesment test (provided by TU careers, our partner)
+<a href="https://www.tucareers.com/take-free-assessment/0/nojs"><button 
+type="button" class="button">START THE TEST</button></a></div>
 
+<br>
+<marquee style="color:black;">CLICK ON THE LOGO ON TOP-LEFT CORNER 
+TO KNOW MORE ABOUT CAREER COUNSELLING</marquee>
+<br><br>
+
+
+
+</body>
 </html>

@@ -16,43 +16,43 @@ function check()
  
     var r= /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 if (r.test(x))
-{//document.getElementById("secondPrompt").style.color="Green";
+{
 document.getElementById("secondPrompt").innerHTML="valid"
 return true;
 }
 else
 
-{//document.getElementById("secondPrompt").style.color="Red";
+{
 document.getElementById("secondPrompt").innerHTML="enter valid email"
 return false;
   }
 }
 function check2()
-{ //test xxx-xxx-xxxx
+{ 
   var phone= document.getElementById("phoneno").value;
  
     var s=/^\d{3}-\d{3}-\d{4}$/;
 if (s.test(phone))
-{//document.getElementById("phonePrompt").style.color="Green";
+{
 document.getElementById("phonePrompt").innerHTML="accepted";
 return (true);}
 else
-{//document.getElementById("phonePrompt").style.color="Red";
+{
 document.getElementById("phonePrompt").innerHTML="use xxx-xxx-xxxx";
 return (false);
   }
 }
 
 function validate()
-{//test for name
+{
     var t = /^[a-zA-Z]+ [a-zA-Z]+$/;
     var name = document.getElementById('yourname').value;
     if(!t.test(name)){
-    	//document.getElementById("firstPrompt").style.color="Red";
+    	
       document.getElementById("firstPrompt").innerHTML="enter full name ";
         return false;
     }else{
-//document.getElementById("firstPrompt").style.color="Green";
+
         document.getElementById("firstPrompt").innerHTML="valid";
         return true;
     }
@@ -62,18 +62,7 @@ function openWin() {
 }
 </script>
 <style>
-/*.header {
-   padding-top: 0.75rem;
-   padding-right: 2rem;
-    padding-left: 2rem;
-     padding-bottom: 1.5rem;
-  text-align: center;
-  background: #4169E1;
-  background-size: 100%;
-  color: white;
-  font-size: 10px;
-  }*/
- 
+
 .dropbtn {
   
   font-size: 20px;
@@ -154,7 +143,6 @@ font-size: 16px;
  width: 300px;
   height: 100px;
   padding: 30px;
-  /*border: 2px solid black;*/
 background-color:#4169e1;/*royal blue*/
 }
  table {
@@ -181,7 +169,6 @@ table{
  width: 100px;
   height: 100px;
   padding:10px;
-  /*border: 2px solid black;*/
 background-color:#4169e1;/*royal blue*/
 }
 
@@ -210,7 +197,7 @@ table{
  width: 60px;
   height: 100px;
   padding:3px;
-  /*border: 2px solid black;*/
+  
 background-color:#4169e1;/*royal blue*/
 }
 
@@ -219,19 +206,7 @@ background-color:#4169e1;/*royal blue*/
 
 </style>
 <body>
-	 <!-- <header>
-    <nav id="header-nav" class="navbar navbar-default">
-    	<div class="container">
-        <div class="navbar-header">
-    	<img src="images/D.png" alt="logo" style="float:left;width:83px;height:83px;">
-    	
-    </div>
-</div>
-
-
-    </nav>
-</header>
-	<img src="images/D.png" alt="logo" style="float:left;width:83px;height:83px;">-->
+	 
 <div>
 
 <a href="submit.html">
@@ -240,17 +215,7 @@ background-color:#4169e1;/*royal blue*/
 <h1 align="center">JOIN US</h1>
 </div>
 
-<!--<h1 align="left"  >DreamBIG</h1>
-  <h4 align="left">Career Counselling & Guidance</h4>
-<div class="dropdown" style="float:right;">
-<button class="dropbtn" ><i class="fa fa-align-justify" aria-hidden="true"></i></button>
-  <div class="dropdown-content">
-  <a href="about.html">About us</a>
-  <a href="registration.html">Registrations</a>
-  <a href="faq.html">FAQs</a>
-</div>
-  </div>
-</div>-->
+
 
 
 <form action="#">
@@ -277,10 +242,7 @@ background-color:#4169e1;/*royal blue*/
 <td class="feed_col"><span id="secondPrompt"></span></td>
 </tr>
 
-<!--<tr>
-<td class="label_col">Appointment Date:</td>
-<td class="input_col"><input type="date" required ><br></td>
-</tr>-->
+
 <tr>
 <td class="label_col">Qualification:</td>
 <td class="input_col"><textarea id="Qualification:" rows="4" cols="50"></textarea></td>
@@ -290,7 +252,7 @@ background-color:#4169e1;/*royal blue*/
 <td class="input_col">
 <input type="radio"  name="Grade" value="2+" >2+ <br>
 <input type="radio"  name="Grade" value="3+" >3+ <br>
-<!--<input type="radio"  name="Grade" value="" >bachleor <br>-->
+
 <input type="radio"  name="Grade" value="others" >others <br></td>
 
 </tr>
@@ -304,10 +266,7 @@ background-color:#4169e1;/*royal blue*/
 
 <td class="input_col"><input type="submit" value="Submit" id="button1" onclick="openWin()"></td>
 </tr>
-<!--<tr>
-<td class="label_col"></td>
-<td class="input_col"><button class="button button1" onclick="openWin()">SUBMIT</button></td>
-</tr>-->
+
 
 </table>
 </form>
@@ -315,25 +274,6 @@ background-color:#4169e1;/*royal blue*/
 
 
 </body>
-<br><br><br>
-<div class="footer">
-<a href="about.html">About Us</a><br>
-<p>Connect with us:
-<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-<a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></p>
-<details>
-<summary>Contact Us</summary><p><i class="fa fa-phone" aria-hidden="true"></i>1234567890<br>
-<i class="fa fa-envelope-open" aria-hidden="true"></i>dreambid@gmail.com
-</p>
-</details><br>
-<div class="col">
-<a href="testimonials.html">Feedback</a>
-<p><a href="teamm.html">Meet the team</a></p>
-<p><a href="faq.html">FAQs</a></p></div>
-<br>
-<p align="center">&copy; All Rights Resered, DreamBig 2020.</p>
-<p align="center"> Made with<i class="fa fa-heart" aria-hidden="true"></i>by Chirag Hegde, Nidhi Singh &amp; Nidhi Heniya.</p>
+
 
 </html>
