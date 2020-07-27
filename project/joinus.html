@@ -17,13 +17,13 @@ function check()
     var r= /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 if (r.test(x))
 {
-document.getElementById("secondPrompt").innerHTML="valid"
+document.getElementById("secondPrompt").innerHTML="VALID"
 return true;
 }
 else
 
 {
-document.getElementById("secondPrompt").innerHTML="enter valid email"
+document.getElementById("secondPrompt").innerHTML="INVALID"
 return false;
   }
 }
@@ -34,7 +34,7 @@ function check2()
     var s=/^\d{3}-\d{3}-\d{4}$/;
 if (s.test(phone))
 {
-document.getElementById("phonePrompt").innerHTML="accepted";
+document.getElementById("phonePrompt").innerHTML="VALID";
 return (true);}
 else
 {
@@ -49,17 +49,15 @@ function validate()
     var name = document.getElementById('yourname').value;
     if(!t.test(name)){
     	
-      document.getElementById("firstPrompt").innerHTML="enter full name ";
+      document.getElementById("firstPrompt").innerHTML="INVALID ";
         return false;
     }else{
 
-        document.getElementById("firstPrompt").innerHTML="valid";
+        document.getElementById("firstPrompt").innerHTML="VALID";
         return true;
     }
 }
-function openWin() {
-  window.open("submit.html");
-}
+
 </script>
 <style>
 
@@ -167,7 +165,7 @@ background-color:#4169e1;/*royal blue*/
   <td class="feed_col"><span id="firstPrompt"></span></td>    </tr>
 <tr>
     <td class="label_col">Phone No:</td>
-<td class="input_col"><input name="phoneno" type="text" id="phoneno"  onblur="check2();" placeholder="xxx-xxx-xxxx"><br></td>
+<td class="input_col"><input name="phoneno" type="text" id="phoneno"  onblur="check2();" placeholder="xxx-xxx-xxxx" required><br></td>
 <td class="feed_col"><span id="phonePrompt"></span></td>
 </tr>
 
@@ -178,33 +176,32 @@ background-color:#4169e1;/*royal blue*/
 <tr>
    <td class="label_col">Email:</td>
  
-<td class="input_col"><input name="email" type="text" id="email"  onblur="check();"><br></td>
+<td class="input_col"><input name="email" type="text" id="email"  onblur="check();" required><br></td>
 <td class="feed_col"><span id="secondPrompt"></span></td>
 </tr>
 
 
 <tr>
 <td class="label_col">Qualification:</td>
-<td class="input_col"><textarea id="Qualification:" rows="4" cols="50"></textarea></td>
+<td class="input_col"><textarea id="Qualification:" rows="4" cols="50" required></textarea></td>
 </tr>
 <tr>
     <td class="label_col">Experience:(years)</td>
 <td class="input_col">
 <input type="radio"  name="Grade" value="2+" >2+ <br>
 <input type="radio"  name="Grade" value="3+" >3+ <br>
-
-<input type="radio"  name="Grade" value="others" >others <br></td>
+<input type="radio"  name="Grade" value="others" required>others <br></td>
 
 </tr>
 <tr>
 	<tr>
 <td class="label_col">Why are you interested to join us:</td>
-<td class="input_col"><textarea id="Experience:" rows="4" cols="50"></textarea></td>
+<td class="input_col"><textarea id="Experience:" rows="4" cols="50" required></textarea></td>
 </tr>
 <tr>
 <td class="label_col"></td>
 
-<td class="input_col"><input type="submit" value="Submit" id="button1" onclick="openWin()"></td>
+<td class="input_col"><input type="submit" value="Submit" id="button1"></td>
 </tr>
 
 
