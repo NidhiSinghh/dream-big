@@ -133,6 +133,20 @@ div {
 	box-shadow:0px 0px 10px 2px;
 }	
 
+.mapouter{
+	position:relative;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	height:251px;
+	width:313px;
+}
+.gmap_canvas{
+	overflow:hidden;
+	background:none!important;
+	height:251px;
+	width:313px;
+}
 
 
 
